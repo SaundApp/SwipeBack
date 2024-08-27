@@ -1,0 +1,24 @@
+// swift-tools-version: 5.9
+import PackageDescription
+
+let package = Package(
+    name: "Swipeback",
+    platforms: [.iOS(.v13)],
+    products: [
+        .library(
+            name: "Swipeback",
+            targets: ["SwipeBackPlugin"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", branch: "main")
+    ],
+    targets: [
+        .target(
+            name: "SwipeBackPlugin",
+            dependencies: [
+                .product(name: "Capacitor", package: "capacitor-swift-pm"),
+                .product(name: "Cordova", package: "capacitor-swift-pm")
+            ],
+            path: "ios/Sources/SwipeBackPlugin"),
+    ]
+)
