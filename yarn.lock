@@ -332,6 +332,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@saundapp/swipeback@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@saundapp/swipeback@workspace:."
+  dependencies:
+    "@capacitor/android": "npm:^6.0.0"
+    "@capacitor/core": "npm:^6.0.0"
+    "@capacitor/docgen": "npm:^0.2.2"
+    "@capacitor/ios": "npm:^6.0.0"
+    "@ionic/eslint-config": "npm:^0.4.0"
+    "@ionic/prettier-config": "npm:^1.0.1"
+    "@ionic/swiftlint-config": "npm:^1.1.2"
+    eslint: "npm:^8.57.0"
+    prettier: "npm:~2.3.0"
+    prettier-plugin-java: "npm:~1.0.2"
+    rimraf: "npm:^3.0.2"
+    rollup: "npm:^2.32.0"
+    swiftlint: "npm:^1.0.1"
+    typescript: "npm:~4.1.5"
+  peerDependencies:
+    "@capacitor/core": ^6.0.0
+  languageName: unknown
+  linkType: soft
+
 "@types/fs-extra@npm:^8.0.0":
   version: 8.1.5
   resolution: "@types/fs-extra@npm:8.1.5"
@@ -3148,29 +3171,6 @@ __metadata:
   checksum: 10c0/6a53562f0b72802a2b664a019a122797949cf19548ac0e54d35437fd61579b7d6b4df134ffcf14a0da91e7b70a9e0a6b56aa577da15ec42b243a396b58035e3b
   languageName: node
   linkType: hard
-
-"swipeback@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "swipeback@workspace:."
-  dependencies:
-    "@capacitor/android": "npm:^6.0.0"
-    "@capacitor/core": "npm:^6.0.0"
-    "@capacitor/docgen": "npm:^0.2.2"
-    "@capacitor/ios": "npm:^6.0.0"
-    "@ionic/eslint-config": "npm:^0.4.0"
-    "@ionic/prettier-config": "npm:^1.0.1"
-    "@ionic/swiftlint-config": "npm:^1.1.2"
-    eslint: "npm:^8.57.0"
-    prettier: "npm:~2.3.0"
-    prettier-plugin-java: "npm:~1.0.2"
-    rimraf: "npm:^3.0.2"
-    rollup: "npm:^2.32.0"
-    swiftlint: "npm:^1.0.1"
-    typescript: "npm:~4.1.5"
-  peerDependencies:
-    "@capacitor/core": ^6.0.0
-  languageName: unknown
-  linkType: soft
 
 "tar@npm:^6.1.11, tar@npm:^6.2.1":
   version: 6.2.1
