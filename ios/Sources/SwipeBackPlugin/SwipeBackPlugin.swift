@@ -11,9 +11,11 @@ public class SwipeBackPlugin: CAPPlugin, CAPBridgedPlugin {
 
     @objc func setAllowsBackForwardNavigationGestures(_ call: CAPPluginCall) {
         let allow = call.getBool("allow") ?? false
-
+    
         DispatchQueue.main.async {
-            self.bridge?.webView?.allowsBackForwardNavigationGestures = allow
+            if !allow {
+                self.bridge?.webView?.backForwardList.perform(Selector(("_removeAllItems")))
+            }
         }
 
         call.resolve()
