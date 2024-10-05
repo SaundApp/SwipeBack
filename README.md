@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`setAllowsBackForwardNavigationGestures(...)`](#setallowsbackforwardnavigationgestures)
+* [`clearHistory()`](#clearhistory)
 
 </docgen-index>
 
@@ -29,6 +30,15 @@ setAllowsBackForwardNavigationGestures(options: { allow: boolean; }) => Promise<
 | Param         | Type                             |
 | ------------- | -------------------------------- |
 | **`options`** | <code>{ allow: boolean; }</code> |
+
+--------------------
+
+
+### clearHistory()
+
+```typescript
+clearHistory() => Promise<void>
+```
 
 --------------------
 

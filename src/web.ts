@@ -6,4 +6,8 @@ export class SwipeBackWeb extends WebPlugin implements SwipeBackPlugin {
   async setAllowsBackForwardNavigationGestures(): Promise<void> {
     return;
   }
+
+  async clearHistory(): Promise<void> {
+    return;
+  }
 }

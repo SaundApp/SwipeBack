@@ -16,4 +16,11 @@ public class SwipeBackPlugin extends Plugin {
 
         call.resolve();
     }
+
+    @PluginMethod
+    public void clearHistory(PluginCall call) {
+        // Not supported on Android
+
+        call.resolve();
+    }
 }
